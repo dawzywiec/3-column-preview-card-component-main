@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #343434;
+  padding: 50px 5vw;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#cards-section {
+  max-width: 1440px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#cards-section .card {
+  position: relative;
+  width: 33.33%;
+  min-height: 100%;
+  padding: 40px;
+  padding-right: calc(40px * 3);
+  overflow: hidden;
+}
+
+#cards-section .card.orange {
+  background-color: #e38826;
+}
+
+#cards-section .card.orange a {
+  color: #e38826;
+}
+
+#cards-section .card.orange a:hover {
+  background-color: #e38826;
+  color: white;
+}
+
+#cards-section .card.cyan {
+  background-color: #006970;
+}
+
+#cards-section .card.cyan a {
+  color: #006970;
+}
+
+#cards-section .card.cyan a:hover {
+  background-color: #006970;
+  color: white;
+}
+
+#cards-section .card.dark-cyan {
+  background-color: #004241;
+}
+
+#cards-section .card.dark-cyan a {
+  color: #004241;
+}
+
+#cards-section .card.dark-cyan a:hover {
+  background-color: #004241;
+  color: white;
+}
+
+#cards-section .card .content {
+  width: 100%;
+  min-height: 100%;
+}
+
+#cards-section .card .content h2 {
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 35px;
+}
+
+#cards-section .card .content img {
+  margin-bottom: 40px;
+}
+
+#cards-section .card .content p {
+  margin-bottom: calc(40px * 2);
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+#cards-section .card .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#cards-section .card .image-overlay {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#cards-section .card .image-overlay img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#cards-section .card .image-overlay .image-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #6bdab7;
+  background: linear-gradient(310deg, rgba(107, 218, 183, 0.115266) 0%, rgba(251, 191, 63, 0.154482) 100%);
+}
+
+#cards-section .card:hover .image-overlay {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  #cards-section .card {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 730px) {
+  #cards-section .card {
+    padding-right: calc(40px * 4);
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #cards-section .card {
+    padding-right: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
